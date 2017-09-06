@@ -1,0 +1,23 @@
+.address__link {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0;
+  padding-left: 26px;
+  font-family: "HaginsCapsMedium", "Arial", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #fff;
+  text-transform: uppercase;
+  position: relative;
+  
+  &::before {
+    content: "|";
+    position: absolute;
+    top: 0;
+    left: 12px;
+  }
+  
+  &:first-child::before {
+    display: none;
+  }
+}

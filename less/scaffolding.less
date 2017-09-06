@@ -1,0 +1,36 @@
+body {
+  font-family: "Minion Pro", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 700;
+  color: @normal;
+  
+  width: 100vw;
+  height: 100vh;
+  background-color: @bg;
+  outline: 10px solid @border;
+  outline-offset: -35px;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+ul {
+  .reset;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}

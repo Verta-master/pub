@@ -4,10 +4,17 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  
+  &--main {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+  }
 }
 
 .footer__text {
-  color: #fff;
+  color: @light;
 }
 
 .footer__link {

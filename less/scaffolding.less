@@ -1,3 +1,24 @@
+@font-face {
+  font-weight: 400;
+  font-family: "AlotGutenbergB";
+  font-style: normal;
+  src: url("../fonts/AlotGutenbergB.ttf") format("truetype");
+}
+
+@font-face {
+  font-weight: 400;
+  font-family: "Hagin Caps Medium";
+  font-style: normal;
+  src: url("../fonts/HaginCapsMedium.otf");
+}
+
+@font-face {
+  font-weight: 400;
+  font-family: "Minion Pro";
+  font-style: normal;
+  src: url("../fonts/MinionPro-BoldCn.otf");
+}
+
 body {
   font-family: "Minion Pro", "Arial", sans-serif;
   font-size: 18px;
@@ -5,16 +26,9 @@ body {
   font-weight: 700;
   color: @normal;
   
-  width: 100vw;
-  height: 100vh;
   background-color: @bg;
   outline: 10px solid @border;
   outline-offset: -35px;
-  
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-start;
 }
 
 img {

@@ -7,11 +7,35 @@
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-  <header class="header">
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="swiper-wrap">
+          <div class="swiper-text">
+            <p class="swiper-title">МЫ ЗНАЕМ ТОЛК В ПИВЕ И ЕГО У НАС МНОГО</p>
+            <p class="swiper-subtitle">От первичного анализа и помощи в составлении нагруженных проектов под ключ.</p>
+            <a href="menu.html" class="swiper-link">ПОСМОТРЕТЬ МЕНЮ</a>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="swiper-wrap">
+          <div class="swiper-text">
+            <p class="swiper-title">МЫ ЗНАЕМ ТОЛК В ПИВЕ И ЕГО У НАС МНОГО</p>
+            <p class="swiper-subtitle">От первичного анализа и помощи в составлении нагруженных проектов под ключ.</p>
+            <a href="menu.html" class="swiper-link">ПОСМОТРЕТЬ МЕНЮ</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+  
+  <header class="header header--main">
     <div class="logo">Brugge</div>
     <nav class="menu">
       <ul class="menu__list">
-        <li class="menu__item"><a class="menu__link menu__link--active">легенда</a></li>
+        <li class="menu__item"><a href="about.html" class="menu__link">легенда</a></li>
         <li class="menu__item"><a href="menu.html" class="menu__link">МЕНЮ</a></li>
         <li class="menu__item"><a href="gallery.html" class="menu__link">ГАЛЕРЕЯ</a></li>
         <li class="menu__item"><a href="contacts.html" class="menu__link">КОНТАКТЫ</a></li>
@@ -23,16 +47,18 @@
     </address>
     <a href="#" class="header__book">БРОНЬ СТОЛА</a>
   </header>
-  
-  <main>
-    <h1 class="title-h1">МЫ ЗНАЕМ ТОЛК В ПИВЕ И ЕГО У НАС МНОГО</h1>
-    <p class="subtitle">От первичного анализа и помощи в составлении нагруженных проектов под ключ.</p>
-    <a href="menu.html" class="link">ПОСМОТРЕТЬ МЕНЮ</a>
-  </main>
-  
-  <footer class="footer">
+
+  <footer class="footer footer--main">
     <p class="footer__text">© Brugge пивной ресторан | 2017</p>
     <p class="footer__text">Designed by | <a href="http://laylaydigital.ru" class="footer__link">Lay Lay</a></p>
   </footer>
+  
+  <script src="js/swiper.min.js"></script>
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      pagination: '.swiper-pagination',
+      paginationClickable: true
+    });
+  </script>
 </body>
 </html>

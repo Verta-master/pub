@@ -6,7 +6,7 @@
   font-family: "Hagin Caps Medium", "Arial", sans-serif;
   font-weight: 400;
   font-style: normal;
-  color: @light;
+  color: @red;
   text-transform: uppercase;
   position: relative;
   
@@ -19,5 +19,13 @@
   
   &:first-child::before {
     display: none;
+  }
+}
+
+.address--main .address__link {
+  color: @light;
+  
+  &::before {
+    color: @light;
   }
 }

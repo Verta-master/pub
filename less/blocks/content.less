@@ -57,12 +57,47 @@ h1 {
   max-width: 500px;
   margin-top: 0;
   margin-bottom: 25px;
+  
+  &--about,
+  &--gallery {
+    max-width: 200px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: -70px;
+      width: 70px;
+      height: 2px;
+      background-color: @caption;
+    }
+  }
+  
+  &--about {
+    max-width: 390px;
+  }
 }
 
 .content__text {
   max-width: 425px;
   margin-top: 0;
   margin-bottom: 30px;
+  
+  &--about,
+  &--gallery {
+    max-width: 570px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  &--about {
+    margin-bottom: 0;
+  }
 }
 
 .content__link,

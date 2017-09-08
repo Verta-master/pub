@@ -1,0 +1,30 @@
+.about {
+  width: @max;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: 60%;
+    width: 153px;
+    height: 192px;
+    background-image: url(../../img/bottle.png);
+    background-repeat: no-repeat;
+  }
+  
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-30%);
+    width: 996px;
+    height: 761px;
+    background-image: url(../img/background-lid.png);
+    background-repeat: no-repeat;
+    z-index: -1;
+  }
+}

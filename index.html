@@ -4,9 +4,10 @@
   <meta charset="UTF-8">
   <meta  name="viewport" content="width=device-width,initial-scale=1">
   <title>Brugge пивной ресторан</title>
+  <link rel="shortcut icon" href="img/favicon.png" type="image/png">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
-<body>
+<body class="home">
   <div class="swiper-container">
     <div class="swiper-wrapper">
       <div class="swiper-slide">
@@ -57,7 +58,9 @@
   <script>
     var swiper = new Swiper('.swiper-container', {
       pagination: '.swiper-pagination',
-      paginationClickable: true
+      paginationClickable: true,
+      effect: 'fade',
+      speed: 1500
     });
   </script>
 </body>

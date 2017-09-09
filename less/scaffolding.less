@@ -9,29 +9,31 @@
   font-weight: 400;
   font-family: "Hagin Caps Medium";
   font-style: normal;
-  src: url("../fonts/HaginCapsMedium.otf");
+  src: url("../fonts/hagin_caps_medium_regular.otf");
 }
 
 @font-face {
-  font-weight: 400;
-  font-family: "Minion Pro";
+  font-weight: 700;
+  font-family: "Minion Pro Bold Condenced";
   font-style: normal;
-  src: url("../fonts/MinionPro-BoldCn.otf");
+  src: url("../fonts/MinionPro-BoldCn_0.otf");
 }
 
 body {
-  font-family: "Minion Pro", "Arial", sans-serif;
+  font-family: "Minion Pro Bold Condenced", "Arial", sans-serif;
   font-size: 18px;
   line-height: 25px;
   font-weight: 700;
   color: @normal;
-  
   background-color: @bg;
-  background-image: url(../img/background-dots.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  outline: 10px solid @border;
-  outline-offset: -35px;
+  .border;
+  width: 100vw;
+  height: 100vh;
+  padding-top: 190px;
+}
+
+.home {
+  padding-top: 0;
 }
 
 img {
@@ -50,4 +52,8 @@ ul {
 
 a {
   text-decoration: none;
+}
+
+button {
+  font: inherit;
 }

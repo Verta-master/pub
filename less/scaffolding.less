@@ -2,21 +2,29 @@
   font-weight: 400;
   font-family: "AlotGutenbergB";
   font-style: normal;
-  src: url("../fonts/AlotGutenbergB.ttf") format("truetype");
+  src: url("../fonts/AlotGutenbergB.woff2") format("woff2"),
+    url("../fonts/AlotGutenbergB.woff") format("woff"),
+    url("../fonts/AlotGutenbergB.ttf") format("truetype");
 }
 
 @font-face {
   font-weight: 400;
   font-family: "Hagin Caps Medium";
   font-style: normal;
-  src: url("../fonts/hagin_caps_medium_regular.otf");
+  src: url("../fonts/HaginCapsMedium.woff2") format("woff2"),
+    url("../fonts/HaginCapsMedium.woff") format("woff"),
+    url("../fonts/HaginCapsMedium.ttf") format("truetype"),
+    url("../fonts/hagin_caps_medium_regular.otf");
 }
 
 @font-face {
   font-weight: 700;
   font-family: "Minion Pro Bold Condenced";
   font-style: normal;
-  src: url("../fonts/MinionPro-BoldCn_0.otf");
+  src: url("../fonts/MinionPro-BoldCn.woff2") format("woff2"),
+    url("../fonts/MinionPro-BoldCn.woff") format("woff"),
+    url("../fonts/MinionPro-BoldCn.ttf") format("truetype"),
+    url("../fonts/MinionPro-BoldCn_0.otf");
 }
 
 body {
@@ -26,6 +34,9 @@ body {
   font-weight: 700;
   color: @normal;
   background-color: @bg;
+  background-image: url(../img/background-dots.png);
+  background-repeat: no-repeat;
+  background-size: cover;
   .border;
   width: 100vw;
   height: 100vh;

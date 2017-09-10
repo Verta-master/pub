@@ -650,10 +650,13 @@ button.swiper-pagination-bullet {
 .swiper-link {
   display: block;
   padding: 0 8px;
+  max-width: 159px;
   font-family: "Hagin Caps Medium", "Arial", sans-serif;
   color: @light;
+  font-weight: 400;
   text-transform: uppercase;
   position: relative;
+  transition: ease-out 0.3s;
   
   &::after {
     content: "";
@@ -663,5 +666,18 @@ button.swiper-pagination-bullet {
     width: 159px;
     height: 4px;
     background-color: @light;
+    z-index: -1;
+    transition: ease-out 0.3s;
+  }
+  
+  &:hover,
+  &:active {
+    color: @brown;
+    transition: ease-out 0.3s;
+    
+    &::after {
+      height: 40px;
+      transition: ease-out 0.3s;
+    }
   }
 }

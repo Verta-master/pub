@@ -9,6 +9,7 @@
   color: @red;
   text-transform: uppercase;
   position: relative;
+  cursor: pointer;
   
   &::before {
     content: "|";
@@ -19,6 +20,12 @@
   
   &:first-child::before {
     display: none;
+  }
+  
+  &:hover span,
+  &:active span {
+    color: #982c30;
+    border-bottom: 1px solid #982c30;
   }
 }
 

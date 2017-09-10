@@ -17,8 +17,10 @@
   position: absolute;
   top: 30px;
   right: 0;
+  z-index: 30;
   padding-top: 37px;
-  padding-left: 12px;
+  padding-right: 60px;
+  text-align: center;
   
   font-family: "Hagin Caps Medium", "Arial", sans-serif;
   font-weight: 400;
@@ -33,4 +35,31 @@
 .header--main .header__book {
   color: @tel;
   background-image: url(../img/hand.png);
+}
+
+@keyframes bounce {
+  from, 20%, 53%, 80%, to {
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    transform: translate3d(0,0,0);
+  }
+
+  40%, 43% {
+    animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    transform: translate3d(0, -20px, 0);
+  }
+
+  70% {
+    animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    transform: translate3d(0, -10px, 0);
+  }
+
+  90% {
+    transform: translate3d(0,-4px,0);
+  }
+}
+
+.header__book:hover {
+  animation-duration: 1s;
+  animation-name: bounce;
+  transform-origin: center bottom;
 }

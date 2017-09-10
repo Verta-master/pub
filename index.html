@@ -4,34 +4,10 @@
   <meta charset="UTF-8">
   <meta  name="viewport" content="width=device-width,initial-scale=1">
   <title>Brugge пивной ресторан</title>
-  <link rel="shortcut icon" href="img/favicon.png" type="image/png">
+  <link rel="shortcut icon" href="favicon.png" type="image/png">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body class="home">
-  <div class="swiper-container">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide">
-        <div class="swiper-wrap">
-          <div class="swiper-text">
-            <p class="swiper-title">МЫ ЗНАЕМ ТОЛК В ПИВЕ И ЕГО У НАС МНОГО</p>
-            <p class="swiper-subtitle">От первичного анализа и помощи в составлении нагруженных проектов под ключ.</p>
-            <a href="menu.html" class="swiper-link">ПОСМОТРЕТЬ МЕНЮ</a>
-          </div>
-        </div>
-      </div>
-      <div class="swiper-slide">
-        <div class="swiper-wrap">
-          <div class="swiper-text">
-            <p class="swiper-title">МЫ ЗНАЕМ ТОЛК В ПИВЕ И ЕГО У НАС МНОГО</p>
-            <p class="swiper-subtitle">От первичного анализа и помощи в составлении нагруженных проектов под ключ.</p>
-            <a href="menu.html" class="swiper-link">ПОСМОТРЕТЬ МЕНЮ</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="swiper-pagination"></div>
-  </div>
-  
   <header class="header header--main">
     <div class="logo">Brugge</div>
     <nav class="menu menu--main">
@@ -44,16 +20,55 @@
     </nav>
     <address class="address address--main">
       <a href="Tel:+79964098278" class="address__link">8 (996) 409-82-78</a>
-      <p class="address__link">ул, ЛЕНИНА, 31</p>
+      <a href="contacts.html" class="address__link">ул, ЛЕНИНА, 31</a>
     </address>
     <a href="#" class="header__book">БРОНЬ СТОЛА</a>
   </header>
+
+  <main>
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="swiper-wrap">
+            <div class="swiper-text">
+              <p class="swiper-title">МЫ ЗНАЕМ ТОЛК В ПИВЕ И ЕГО У НАС МНОГО</p>
+              <p class="swiper-subtitle">От первичного анализа и помощи в составлении нагруженных проектов под ключ.</p>
+              <a href="menu.html" class="swiper-link">ПОСМОТРЕТЬ МЕНЮ</a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="swiper-wrap">
+            <div class="swiper-text">
+              <p class="swiper-title">МЫ ЗНАЕМ ТОЛК В ПИВЕ И ЕГО У НАС МНОГО</p>
+              <p class="swiper-subtitle">От первичного анализа и помощи в составлении нагруженных проектов под ключ.</p>
+              <a href="menu.html" class="swiper-link">ПОСМОТРЕТЬ МЕНЮ</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </main>
 
   <footer class="footer footer--main">
     <p class="footer__text">© Brugge пивной ресторан | 2017</p>
     <p class="footer__text">Designed by | <a href="http://laylaydigital.ru" class="footer__link">Lay Lay</a></p>
   </footer>
   
+  <div class="modal">
+    <h2 class="content__title content__title--modal">бронируйте столик!</h2>
+    <p class="content__text content__text--modal">Мы вам скажем - такого больше нигде нет! Море пива, полная кухня вкусностей и особая атмосфера.</p>
+    <div class="modal__block">
+      <p class="modal__address">
+        <span>Телефон для брони:</span>
+        <a href="Tel:+79964098278" class="modal__link">8 (996) 409-82-78</a>
+      </p>
+      <img src="img/booked.png" alt="бронируйте столик" class="modal__img" width="387" height="393">
+    </div>
+  </div>
+  
+  <script src="js/script.js"></script>
   <script src="js/swiper.min.js"></script>
   <script>
     var swiper = new Swiper('.swiper-container', {

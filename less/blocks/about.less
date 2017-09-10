@@ -1,5 +1,5 @@
 .about {
-  width: @max;
+  width: auto;
   margin: 0 auto;
   text-align: center;
   position: relative;
@@ -37,7 +37,18 @@
   margin-bottom: 90px;
   display: flex;
   justify-content: space-between;
+  position: relative;
   
+  &::before {
+    content: "";
+    position: absolute;
+    top: -70px;
+    left: 50%;
+    width: 194px;
+    height: 207px;
+    background-image: url(../img/leaves.png);
+    background-repeat: no-repeat;
+  }
 }
 
 .about__column {
@@ -54,18 +65,7 @@
     background-image: url(../img/leaves-2.png);
     background-repeat: no-repeat;
   }
-  
-  &:nth-child(2)::before {
-    content: "";
-    position: absolute;
-    top: -70px;
-    left: 0;
-    width: 194px;
-    height: 207px;
-    background-image: url(../img/leaves.png);
-    background-repeat: no-repeat;
-  }
-  
+
   &:nth-child(2)::after {
     content: "";
     position: absolute;

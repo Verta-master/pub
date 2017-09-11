@@ -165,9 +165,14 @@
   .swiper-text::after {
     display: none;
   }
+  .swiper-text {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    min-height: auto;
+  }
   .swiper-title {
-    font-size: 40px;
-    line-height: 50px;
+    font-size: 36px;
+    line-height: 1.2;
     max-width: 350px;
   }
   .footer__text:last-of-type {
@@ -179,10 +184,10 @@
     padding-left: 60px;
     padding-right: 60px;
   }
-  .swiper-container-horizontal>.swiper-pagination-bullets,
-  .swiper-pagination-custom,
-  .swiper-pagination-fraction {
-    top: 47.5%;
+  .swiper-container-horizontal>.swiper-pagination-bullets {
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%,-570%,0);
   }
   .modal {
     overflow-y: scroll;
@@ -260,6 +265,11 @@
     font-size: 32px;
     line-height: 40px;
     max-width: 100%;
+  }
+  .swiper-container-horizontal>.swiper-pagination-bullets {
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%,-680%,0);
   }
   .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
     margin-right: 30px;

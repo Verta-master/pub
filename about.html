@@ -101,5 +101,17 @@
       });
     });
   </script>
+  
+  <script>
+    $(document).ready(function(){
+      $(".wrapper").scroll(function(){
+        if ((window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop) <= 500) {
+          $(".about__text").addClass("fadeInUp");
+        } else {
+          $(".about__text").removeClass("fadeInUp");
+        };
+      });
+    });
+  </script>
 </body>
 </html>

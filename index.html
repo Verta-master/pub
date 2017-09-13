@@ -7,23 +7,23 @@
   <link rel="shortcut icon" href="favicon.png" type="image/png">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
-<body class="home">
+<body>
   <header class="header header--main">
-    <div class="logo">Brugge</div>
+    <div class="logo logo-main">Brugge</div>
     <nav class="menu menu--main menu--closed">
       <button class="menu__btn"><span class="visually-hidden">Закрыть/Открыть меню</span></button>
       <ul class="menu__list">
-        <li class="menu__item"><a href="about.html" class="menu__link">легенда</a></li>
-        <li class="menu__item"><a href="menu.html" class="menu__link">МЕНЮ</a></li>
-        <li class="menu__item"><a href="gallery.html" class="menu__link">ГАЛЕРЕЯ</a></li>
-        <li class="menu__item"><a href="contacts.html" class="menu__link">КОНТАКТЫ</a></li>
+        <li class="menu__item"><a href="about.html" class="menu__link paint">легенда</a></li>
+        <li class="menu__item"><a href="menu.html" class="menu__link paint">МЕНЮ</a></li>
+        <li class="menu__item"><a href="gallery.html" class="menu__link paint">ГАЛЕРЕЯ</a></li>
+        <li class="menu__item"><a href="contacts.html" class="menu__link paint">КОНТАКТЫ</a></li>
       </ul>
       <address class="address address--main">
-        <a href="Tel:+79964098278" class="address__link">8 (996) 409-82-78</a>
-        <a href="contacts.html" class="address__link">ул, ЛЕНИНА, 31</a>
+        <a href="Tel:+79964098278" class="address__link paint">8 (996) 409-82-78</a>
+        <a href="#" class="address__link paint map-show">ул, ЛЕНИНА, 31</a>
       </address>
     </nav>
-    <a href="#" class="header__book">БРОНЬ СТОЛА</a>
+    <a href="#" class="header__book header__book--main">БРОНЬ СТОЛА</a>
   </header>
 
   <main>
@@ -42,7 +42,7 @@
           <div class="swiper-wrap">
             <div class="swiper-text">
               <p class="swiper-title">МЫ ЗНАЕМ ТОЛК В ПИВЕ И ЕГО У НАС МНОГО</p>
-              <p class="swiper-subtitle">От первичного анализа и помощи в составлении нагруженных проектов под ключ.</p>
+              <p class="swiper-subtitle">Мы вам скажем - такого больше нигде нет! Море пива, полная кухня вкусностей и особая атмосфера.</p>
               <a href="menu.html" class="swiper-link">ПОСМОТРЕТЬ МЕНЮ</a>
             </div>
           </div>
@@ -53,8 +53,8 @@
   </main>
 
   <footer class="footer footer--main">
-    <p class="footer__text">© Brugge пивной ресторан | 2017</p>
-    <p class="footer__text">Designed by | <a href="http://laylaydigital.ru" class="footer__link">Lay Lay</a></p>
+    <p class="footer__text paint">© Brugge пивной ресторан | 2017</p>
+    <p class="footer__text paint">Designed by | <a href="http://laylaydigital.ru" class="footer__link logo-main">Lay Lay</a></p>
   </footer>
   
   <div class="modal">
@@ -69,7 +69,17 @@
     </div>
   </div>
   
+  <div style="display: none;">
+    <div class="box-modal map" id="map">
+      <div class="map__wrap">
+        <button class="box-modal_close arcticmodal-close"><span class="visually-hidden">Закрыть</span></button>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1937.4038041563595!2d39.078215837302764!3d45.021107877653755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40f05a852a970575%3A0xebf0df6703fb4cce!2sul.+Lenina%2C+32%2C+Krasnodar%2C+Krasnodarskiy+kray%2C+Russia%2C+350911!5e0!3m2!1sen!2suk!4v1505031987119" width="600" height="450" style="border:0" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+  
   <script src="js/script.js"></script>
+<!-- Slider -->
   <script src="js/swiper.min.js"></script>
   <script>
     var swiper = new Swiper('.swiper-container', {
@@ -77,6 +87,24 @@
       paginationClickable: true,
       effect: 'fade',
       speed: 1500
+    });
+  </script>
+
+<!-- Map -->
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/jquery.arcticmodal-0.3.min.js"></script>
+  <script>
+    $(".map-show").click(function(){
+      $(function(){
+        $("#map").arcticmodal({
+          overlay: {
+          css: {
+            backgroundColor: "#000",
+            opacity: .8,
+            }
+          }
+        });
+      });
     });
   </script>
 </body>

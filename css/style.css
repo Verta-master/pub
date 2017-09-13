@@ -1765,6 +1765,20 @@ h1--modal {
 .about__text {
   text-align: left;
 }
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+.fadeInUp {
+  animation-name: fadeInUp;
+  animation-duration: 2s;
+}
 .modal {
   display: none;
   position: fixed;

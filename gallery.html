@@ -21,7 +21,7 @@
         </ul>
         <address class="address">
           <a href="Tel:+79964098278" class="address__link"><span>8 (996) 409-82-78</span></a>
-          <a href="contacts.html" class="address__link"><span>ул, ЛЕНИНА, 31</span></a>
+          <a href="#" class="address__link map-show"><span>ул, ЛЕНИНА, 31</span></a>
         </address>
       </nav>
       <a href="#" class="header__book">БРОНЬ СТОЛА</a>
@@ -99,14 +99,40 @@
     </div>
   </div>
   
+  <div style="display: none;">
+    <div class="box-modal map" id="map">
+      <div class="map__wrap">
+        <button class="box-modal_close arcticmodal-close"><span class="visually-hidden">Закрыть</span></button>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1937.4038041563595!2d39.078215837302764!3d45.021107877653755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40f05a852a970575%3A0xebf0df6703fb4cce!2sul.+Lenina%2C+32%2C+Krasnodar%2C+Krasnodarskiy+kray%2C+Russia%2C+350911!5e0!3m2!1sen!2suk!4v1505031987119" width="600" height="450" style="border:0" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+  
   <script src="js/script.js"></script>  
   <script src="js/jquery-3.2.1.min.js"></script>
   <script src="js/jquery.fancybox.pack.js"></script>
 
-  <!-- Lightbox -->
+<!-- Lightbox -->
   <script>
     $(document).ready(function() {
       $(".fancybox").fancybox();
+    });
+  </script>
+  
+<!-- Map -->
+  <script src="js/jquery.arcticmodal-0.3.min.js"></script>
+  <script>
+    $(".map-show").click(function(){
+      $(function(){
+        $("#map").arcticmodal({
+          overlay: {
+          css: {
+            backgroundColor: "#000",
+            opacity: .8,
+            }
+          }
+        });
+      });
     });
   </script>
 </body>

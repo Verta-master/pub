@@ -10,12 +10,14 @@
   text-transform: uppercase;
   position: relative;
   cursor: pointer;
+  z-index: 25;
   
   &::before {
     content: "|";
     position: absolute;
     top: 0;
     left: 12px;
+    color: inherit;
   }
   
   &:first-child::before {
@@ -33,6 +35,6 @@
   color: @light;
   
   &::before {
-    color: @light;
+    color: inherit;
   }
 }

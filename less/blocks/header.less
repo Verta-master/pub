@@ -9,6 +9,26 @@
   top: 0;
   left: 0;
   z-index: 10;
+  
+  &::after {
+    content: "";
+    position: fixed;
+    width: calc(~"100vw - 50px");
+    height: 10px;
+    top: 25px;
+    left: 25px;
+    background-color: @border;
+  }
+  
+  &::before {
+    content: "";
+    position: fixed;
+    width: 10px;
+    height: calc(~"100vh - 70px");
+    left: 25px;
+    top: 35px;
+    background-color: @border;
+  }
 }
 
 .header__book {
@@ -45,16 +65,16 @@
 
   40%, 43% {
     animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
-    transform: translate3d(0, -20px, 0);
+    transform: translate3d(0, -10px, 0);
   }
 
   70% {
     animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
-    transform: translate3d(0, -10px, 0);
+    transform: translate3d(0, -5px, 0);
   }
 
   90% {
-    transform: translate3d(0,-4px,0);
+    transform: translate3d(0,-2px,0);
   }
 }
 

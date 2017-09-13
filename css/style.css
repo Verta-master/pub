@@ -521,7 +521,7 @@ button {
   position: fixed;
   bottom: 0;
   left: 0;
-  z-index: 10;
+  z-index: 7;
 }
 .footer::after {
   content: "";
@@ -1943,6 +1943,9 @@ h1--modal {
   }
 }
 @media (max-width: 1023px) {
+  .menu {
+    z-index: 50;
+  }
   .menu__btn {
     display: block;
     width: 25px;

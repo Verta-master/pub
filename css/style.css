@@ -2002,12 +2002,12 @@ h1--modal {
   }
   .menu--opened .address--main .address__link,
   .menu--opened .menu__link {
-    color: #848282;
+    color: #848282 !important;
   }
   .menu--opened .menu--main .menu__link:hover,
   .menu--opened .menu__link:hover,
   .menu--opened .menu__link--active {
-    color: #795f4a;
+    color: #795f4a !important;
   }
   .menu--opened .address__link::before,
   .menu--opened .menu__link::after {

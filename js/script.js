@@ -18,7 +18,7 @@ link.addEventListener("click", function (event) {
     for (i = 0; i < pseudo.length; i++) {
       pseudo[i].style.color = "#848282";
     }
-    hand.style.backgroundImage = "url(../img/hand-brown.png)";
+    hand.style.backgroundImage = "url(img/hand-brown.png)";
     for (i = 0; i < logo.length; i++) {
       logo[i].style.color = "#795f4a";
     }
@@ -31,7 +31,7 @@ link.addEventListener("click", function (event) {
     for (i = 0; i < pseudo.length; i++) {
       pseudo[i].style.color = "#fafafa";
     }
-    hand.style.backgroundImage = "url(../img/hand.png)";
+    hand.style.backgroundImage = "url(img/hand.png)";
     for (i = 0; i < logo.length; i++) {
       logo[i].style.color = "#ddb18b";
     }

@@ -24,7 +24,9 @@
           <a href="#" class="address__link map-show"><span>ул, ЛЕНИНА, 31</span></a>
         </address>
       </nav>
-      <a href="#" class="header__book">БРОНЬ СТОЛА</a>
+      <div class="header__hand">
+        <a href="#" class="header__book">БРОНЬ СТОЛА</a>
+      </div>
     </header>
     
     <main>
@@ -98,18 +100,6 @@
             }
           }
         });
-      });
-    });
-  </script>
-  
-  <script>
-    $(document).ready(function(){
-      $(".wrapper").scroll(function(){
-        if ((window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop) <= 500) {
-          $(".about__text").addClass("fadeInUp");
-        } else {
-          $(".about__text").removeClass("fadeInUp");
-        };
       });
     });
   </script>

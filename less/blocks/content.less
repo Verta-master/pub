@@ -83,7 +83,8 @@ h1 {
   }
   
   &--modal {
-    max-width: 460px;
+    max-width: 480px;
+    padding: 0 20px;
   }
 }
 
@@ -139,7 +140,29 @@ h1 {
   color: @normal;
   padding: 0 7px;
   margin-left: 33px;
-  border-left: 2px solid @normal;
-  border-right: 2px solid @normal;
+  position: relative;
   cursor: pointer;
+  
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    width: 155px;
+    height: 4px;
+    background-color: @normal;
+    z-index: -1;
+    transition: ease-out 0.3s;
+  }
+  
+  &:hover,
+  &:active {
+    color: @light;
+    transition: color ease-out 0.3s;
+    
+    &::after {
+      height: 40px;
+      transition: ease-out 0.3s;
+    }
+  }
 }

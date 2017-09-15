@@ -31,29 +31,34 @@
   }
 }
 
-.header__book {
+.header__hand {
   width: 189px;
   height: 158px;
   position: absolute;
   top: 30px;
   right: 0;
-  z-index: 30;
-  padding-top: 37px;
-  padding-right: 60px;
-  text-align: center;
-  
-  font-family: "Hagin Caps Medium", "Arial", sans-serif;
-  font-weight: 400;
-  color: @light;
-  text-transform: uppercase;
-  
+  z-index: 1;
   background-image: url(../img/hand-brown.png);
   background-size: contain;
   background-repeat: no-repeat;
 }
 
+.header__book {
+  display: block;
+  margin-top: 37px;
+  padding-right: 60px;
+  text-align: center;
+  font-family: "Hagin Caps Medium", "Arial", sans-serif;
+  font-weight: 400;
+  color: @light;
+  text-transform: uppercase; 
+}
+
 .header--main .header__book {
   color: @tel;
+}
+
+.header--main .header__hand {
   background-image: url(../img/hand.png);
 }
 
@@ -78,7 +83,7 @@
   }
 }
 
-.header__book:hover {
+.header__hand:hover {
   animation-duration: 1s;
   animation-name: bounce;
   transform-origin: center bottom;

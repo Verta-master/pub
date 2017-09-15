@@ -51,6 +51,18 @@
 @media @tablet {
   .menu {
     z-index: 50;
+    order: 1;
+  }
+  .logo {
+    order: 2;
+    display: block;
+    text-align: center;
+    flex-grow: 0;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .header__hand {
+    top: 0;
   }
   .menu__btn {
     display: block;
@@ -104,7 +116,6 @@
     .menu__link {
       line-height: 40px;
     }
-    .address--main .address__link,
     .menu__link {
       color: @normal !important;
     }
@@ -120,6 +131,12 @@
     .address__link {
       padding-left: 13px;
       padding-right: 13px;
+      color: @red !important;
+      
+      &:hover span {
+        color: #982c30;
+        border-bottom: 1px solid #982c30;
+      }
     }
   }
   .about__wrap {
@@ -243,12 +260,19 @@
   }
   .content__address {
     text-align: center;
+    line-height: 34px;
   }
   .content__btn {
     margin-left: 0;
+    line-height: 34px;
+    
+    &::after {
+      bottom: -5px;
+    }
   }
   .content__link {
     display: block;
+    line-height: 34px;
   }
   .content__link:first-of-type {
     padding-right: 0;
@@ -280,12 +304,15 @@
   .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
     margin-right: 30px;
   }
-  .header__book {
+  .header__hand {
+    top: 20px;
     background-size: 75% auto;
     background-position: right center;
+  }
+  .header__book {
     font-size: 16px;
     padding-right: 3px;
-    padding-top: 45px;
+    margin-top: 45px;
   }
 }
 //----------------

@@ -2190,6 +2190,9 @@ h1--modal {
     -ms-flex-pack: start;
         justify-content: flex-start;
   }
+  .modal__img {
+    margin-bottom: 50px;
+  }
   .modal__address {
     text-align: center;
   }

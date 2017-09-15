@@ -2,7 +2,8 @@ var link = document.querySelector(".header__book");
 var link_main = document.querySelector(".header__book--main");
 var popup = document.querySelector(".modal");
 var paint = document.getElementsByClassName("paint");
-var hand = document.querySelector(".header__book--main");
+var red = document.getElementsByClassName("paint-red");
+var hand = document.querySelector(".header__hand--main");
 var logo = document.getElementsByClassName("logo-main");
 
 link.addEventListener("click", function (event) {
@@ -14,6 +15,9 @@ link.addEventListener("click", function (event) {
     for (i = 0; i < paint.length; i++) {
       paint[i].style.color = "#848282";
     }
+    for (i = 0; i < red.length; i++) {
+      red[i].style.color = "#b3282d";
+    }
     hand.style.backgroundImage = "url(img/hand-brown.png)";
     for (i = 0; i < logo.length; i++) {
       logo[i].style.color = "#795f4a";
@@ -23,6 +27,9 @@ link.addEventListener("click", function (event) {
     link_main.style.color = "#636363";
     for (i = 0; i < paint.length; i++) {
       paint[i].style.color = "#fafafa";
+    }
+    for (i = 0; i < red.length; i++) {
+      red[i].style.color = "#fafafa";
     }
     hand.style.backgroundImage = "url(img/hand.png)";
     for (i = 0; i < logo.length; i++) {

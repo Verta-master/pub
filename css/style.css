@@ -1351,6 +1351,8 @@ h1 {
   margin-top: 0;
   margin-bottom: 25px;
 }
+.content__title--menu,
+h1--menu,
 .content__title--modal,
 h1--modal,
 .content__title--about,
@@ -1363,6 +1365,8 @@ h1--gallery {
   margin-right: auto;
   position: relative;
 }
+.content__title--menu::before,
+h1--menu::before,
 .content__title--modal::before,
 h1--modal::before,
 .content__title--about::before,
@@ -1376,6 +1380,11 @@ h1--gallery::before {
   width: 70px;
   height: 2px;
   background-color: #e2b58e;
+}
+.content__title--menu,
+h1--menu {
+  max-width: 300px;
+  margin-bottom: 20px;
 }
 .content__title--about,
 h1--about {
@@ -1930,6 +1939,125 @@ h1--modal {
   background-size: 20px 20px;
   background-position: center;
 }
+.meal__list {
+  width: 770px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  padding: 70px;
+  padding-top: 38px;
+  padding-bottom: 5px;
+  background-color: #fbfffe;
+  box-shadow: 0px 7px 60.2px 9.8px rgba(121, 95, 74, 0.08);
+}
+.meal__item {
+  margin-bottom: 70px;
+  border-top: 2px solid #aeaeae;
+}
+.meal__title {
+  margin: 0;
+  font-family: "Hagin Caps Medium", "Arial", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 58px;
+  text-align: center;
+  text-transform: uppercase;
+  border-bottom: 1px solid #e6e6e6;
+  position: relative;
+}
+.meal__title::after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 30px;
+  height: 2px;
+  background-color: #aeaeae;
+}
+.meal__line {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: end;
+      justify-content: flex-end;
+  -ms-flex-align: start;
+      align-items: flex-start;
+}
+.meal__caption {
+  font-size: 16px;
+  font-weight: 600;
+  opacity: 0.5;
+  margin-top: 27px;
+  margin-bottom: 8px;
+}
+.meal__caption--price {
+  width: 100px;
+  text-align: right;
+}
+.meal__caption--bottle {
+  width: 100px;
+  text-align: right;
+  font-size: 12px;
+  line-height: 13px;
+}
+.meal__caption--title {
+  width: 350px;
+  padding-left: 20px;
+}
+.meal__caption--drink {
+  width: 450px;
+  padding-left: 20px;
+}
+.meal__caption--beer {
+  width: 420px;
+}
+.meal__caption--left {
+  width: 80px;
+}
+.meal__caption--left-beer {
+  width: 110px;
+}
+.meal__country {
+  width: 80px;
+  margin: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 16px;
+  font-weight: 600;
+}
+.meal__country--beer {
+  width: 110px;
+}
+.meal__name {
+  width: 350px;
+  margin: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  font-size: 20px;
+  text-align: left;
+  border-left: 1px solid #e6e6e6;
+}
+.meal__name span {
+  display: block;
+  font-size: 14px;
+  line-height: 16px;
+  opacity: 0.5;
+}
+.meal__name--drink {
+  width: 450px;
+}
+.meal__name--beer {
+  width: 420px;
+  padding-right: 25px;
+}
+.meal__price {
+  margin: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 100px;
+  text-align: right;
+}
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
   #fancybox-loading,
   .fancybox-close,
@@ -2254,6 +2382,9 @@ h1--modal {
   .map iframe {
     width: 280px;
     height: 300px;
+  }
+  .wrapper--menu {
+    overflow-x: scroll;
   }
 }
 @media (max-width: 479px) {

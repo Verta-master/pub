@@ -463,7 +463,7 @@ button {
 .header__hand {
   width: 189px;
   height: 158px;
-  position: absolute;
+  position: fixed;
   top: 30px;
   right: 0;
   z-index: 1;
@@ -599,7 +599,7 @@ button {
   display: -ms-flexbox;
   display: flex;
   position: fixed;
-  left: 50%;
+  left: 49.3%;
   transform: translateX(-50%);
   z-index: 25;
 }
@@ -697,22 +697,20 @@ button {
 .wrapper::before {
   content: "";
   position: fixed;
-  width: 100%;
+  width: 97%;
   height: 100px;
   top: 0;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 0;
   background-image: linear-gradient(to top, rgba(242, 239, 234, 0.1) 0, rgba(242, 239, 234, 0.3) 10%, rgba(242, 239, 234, 0.6) 20%, #f2efea 50%, #f2efea 100%);
   z-index: 5;
 }
 .wrapper::after {
   content: "";
   position: fixed;
-  width: 100%;
+  width: 97%;
   height: 70px;
   bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 0;
   background-image: linear-gradient(to bottom, rgba(242, 239, 234, 0.1) 0, rgba(242, 239, 234, 0.3) 10%, rgba(242, 239, 234, 0.6) 20%, #f2efea 50%, #f2efea 100%);
   z-index: 5;
 }
@@ -1245,7 +1243,7 @@ button.swiper-pagination-bullet {
 }
 .swiper-subtitle {
   color: #fafafa;
-  max-width: 450px;
+  max-width: 480px;
   margin-top: 0;
   margin-bottom: 30px;
 }
@@ -1442,6 +1440,7 @@ h1--modal {
   margin-left: 33px;
   position: relative;
   cursor: pointer;
+  z-index: 5;
 }
 .content__btn::after {
   content: "";
@@ -1772,6 +1771,12 @@ h1--modal {
   height: 207px;
   background-image: url(../img/leaves.png);
   background-repeat: no-repeat;
+}
+.about__field {
+  max-width: 830px;
+  padding: 0 30px;
+  margin: 0 auto;
+  margin-bottom: 90px;
 }
 .about__column {
   width: 370px;
@@ -2256,6 +2261,10 @@ h1--modal {
   }
 }
 @media (max-width: 767px) {
+  .content__title--modal::before,
+  .content__title--modal::after,
+  .content__title--menu::before,
+  .content__title--menu::after,
   .content__title--gallery::before,
   .content__title--about::before,
   .content__block::after,
@@ -2401,6 +2410,10 @@ h1--modal {
     padding-right: 3px;
     margin-top: 45px;
   }
+  .wrapper::before,
+  .wrapper::after {
+    width: 95%;
+  }
 }
 @media (max-width: 350px) {
   .swiper-wrap {
@@ -2410,5 +2423,9 @@ h1--modal {
     top: 50%;
     left: 50%;
     transform: translate3d(-50%, -103px, 0);
+  }
+  .wrapper::before,
+  .wrapper::after {
+    width: 94%;
   }
 }

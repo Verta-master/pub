@@ -380,12 +380,6 @@ textarea {
 }
 @font-face {
   font-weight: 400;
-  font-family: "AlotGutenbergB";
-  font-style: normal;
-  src: url("../fonts/AlotGutenbergB.woff2") format("woff2"), url("../fonts/AlotGutenbergB.woff") format("woff"), url("../fonts/AlotGutenbergB.ttf") format("truetype"), url("../fonts/AlotGutenbergB.eot"), url("../fonts/AlotGutenbergB.eot?#iefix") format("embedded-opentype");
-}
-@font-face {
-  font-weight: 400;
   font-family: "Hagin Caps Medium";
   font-style: normal;
   src: url("../fonts/HaginCapsMedium.woff2") format("woff2"), url("../fonts/HaginCapsMedium.woff") format("woff"), url("../fonts/HaginCapsMedium.ttf") format("truetype"), url("../fonts/hagin_caps_medium_regular.otf");
@@ -430,6 +424,7 @@ button {
 .header {
   width: 100%;
   padding: 0 80px;
+  padding-left: 70px;
   padding-top: 5px;
   display: -ms-flexbox;
   display: flex;
@@ -574,17 +569,19 @@ button {
   border-bottom: 1px solid #ddb18b;
 }
 .logo {
-  font-family: "AlotGutenbergB", "Arial", sans-serif;
-  font-size: 48px;
-  font-weight: 400;
-  line-height: 48px;
-  color: #ddb18b;
+  fill: #ddb18b;
   -ms-flex-positive: 1;
       flex-grow: 1;
   z-index: 25;
 }
-.logo--internal {
-  color: #795f4a;
+.logo--internal .logo__text {
+  fill: #795f4a;
+}
+.logo img {
+  margin-right: 5px;
+}
+.logo svg {
+  margin-bottom: 5px;
 }
 .menu {
   display: -ms-flexbox;
@@ -2395,6 +2392,9 @@ h1--modal {
   .wrapper--menu {
     overflow-x: scroll;
   }
+  .header__hand {
+    top: 20px;
+  }
 }
 @media (max-width: 479px) {
   .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
@@ -2424,8 +2424,19 @@ h1--modal {
     left: 50%;
     transform: translate3d(-50%, -103px, 0);
   }
+  .swiper-text {
+    padding-left: 40px;
+    padding-right: 30px;
+  }
   .wrapper::before,
   .wrapper::after {
     width: 94%;
+  }
+  .logo svg {
+    width: 100px;
+    margin-bottom: 0;
+  }
+  .logo img {
+    width: 40px;
   }
 }

@@ -308,6 +308,9 @@
   .wrapper--menu {
     overflow-x: scroll;
   }
+  .header__hand {
+    top: 20px;
+  }
 }
 //----------------------------------------------
 @media @mobile-320 {
@@ -341,10 +344,23 @@
     left: 50%;
     transform: translate3d(-50%,-103px,0);
   }
+  .swiper-text {
+    padding-left: 40px;
+    padding-right: 30px;
+  }
   .wrapper {
     &::before,
     &::after {
       width: 94%;
+    }
+  }
+  .logo {
+    svg {
+      width: 100px;
+      margin-bottom: 0;
+    }
+    img {
+      width: 40px;
     }
   }
 }

@@ -4,7 +4,8 @@ var popup = document.querySelector(".modal");
 var paint = document.getElementsByClassName("paint");
 var red = document.getElementsByClassName("paint-red");
 var hand = document.querySelector(".header__hand--main");
-var logo = document.getElementsByClassName("logo-main");
+var logo = document.getElementsByClassName("logo__text");
+var logoImg = document.querySelector(".logo__img");
 
 link.addEventListener("click", function (event) {
   event.preventDefault();
@@ -20,8 +21,9 @@ link.addEventListener("click", function (event) {
     }
     hand.style.backgroundImage = "url(img/hand-brown.png)";
     for (i = 0; i < logo.length; i++) {
-      logo[i].style.color = "#795f4a";
+      logo[i].style.fill = "#795f4a";
     }
+    logoImg.src = "img/logo.png";
   } else {
     link.innerHTML = "БРОНЬ СТОЛА";
     link_main.style.color = "#636363";
@@ -33,8 +35,9 @@ link.addEventListener("click", function (event) {
     }
     hand.style.backgroundImage = "url(img/hand.png)";
     for (i = 0; i < logo.length; i++) {
-      logo[i].style.color = "#ddb18b";
+      logo[i].style.fill = "#ddb18b";
     }
+    logoImg.src = "img/logo-main.png";
   }
 });
 

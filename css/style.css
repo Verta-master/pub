@@ -588,6 +588,7 @@ button {
   display: flex;
   -ms-flex-pack: justify;
       justify-content: space-between;
+  margin-bottom: 7px;
 }
 .menu__btn {
   display: none;
@@ -2137,7 +2138,7 @@ h1--modal {
     margin-left: auto;
   }
   .header__hand {
-    top: 0;
+    top: -17px;
   }
   .menu__btn {
     display: block;
@@ -2278,8 +2279,8 @@ h1--modal {
     display: flex;
     -ms-flex-direction: column;
         flex-direction: column;
-    -ms-flex-pack: justify;
-        justify-content: space-between;
+    -ms-flex-pack: center;
+        justify-content: center;
     -ms-flex-align: start;
         align-items: flex-start;
   }
@@ -2287,7 +2288,7 @@ h1--modal {
     font-size: 26px;
     line-height: 1.1;
     max-width: 300px;
-    margin-bottom: 0;
+    margin-bottom: 25px;
   }
   .swiper-subtitle {
     line-height: 1.1;
@@ -2309,6 +2310,9 @@ h1--modal {
     left: 50%;
     transform: translate3d(-50%, -128px, 0);
     padding-left: 60px;
+  }
+  .swiper-link {
+    display: none;
   }
   .modal {
     overflow-y: scroll;
@@ -2393,15 +2397,21 @@ h1--modal {
     overflow-x: scroll;
   }
   .header__hand {
-    top: 20px;
+    top: -20px;
+  }
+  .logo {
+    margin-left: 30px;
+  }
+  .menu__item:nth-child(2) {
+    display: none;
   }
 }
-@media (max-width: 479px) {
+@media (max-width: 481px) {
   .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
     margin-right: 30px;
   }
   .header__hand {
-    top: 20px;
+    top: -30px;
     background-size: 75% auto;
     background-position: right center;
   }
@@ -2410,9 +2420,21 @@ h1--modal {
     padding-right: 3px;
     margin-top: 45px;
   }
+  .header {
+    padding-left: 20px;
+  }
   .wrapper::before,
   .wrapper::after {
     width: 95%;
+  }
+  .logo {
+    margin-top: 5px;
+  }
+  .logo img {
+    display: none;
+  }
+  .logo svg {
+    margin-bottom: 0;
   }
 }
 @media (max-width: 350px) {
@@ -2431,6 +2453,9 @@ h1--modal {
   .wrapper::before,
   .wrapper::after {
     width: 94%;
+  }
+  .logo {
+    margin-left: 20px;
   }
   .logo svg {
     width: 100px;
